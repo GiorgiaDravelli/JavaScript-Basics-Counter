@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Shadows Into Light', Arial;
+  background-image: url(/assets/images/background.png);
+}
+
+.container {
+  margin-top: 25%;
+  display: flex;
+  padding: 20px 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 120px;
+  padding: 5px 40px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: 'Shadows Into Light', Arial;
+  background-color: #477ee2;
+  border: 2px solid #254876;
+  color: white;
+  margin: 20px;
+}
+
+.btn:hover {
+  background-color: #1e56be;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.reset-btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: 'Shadows Into Light', Arial;
+  border-radius: 10px;
+  background-color: #7696d2;
+  margin-top: 20px;
+}
+
+.reset-btn:hover {
+  background-color: #526ea3;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.counter-value {
+  height: 50px;
+  min-width: 120px;
+  border-radius: 10px;
+  background-color: rgba(156, 185, 220, 0.536);
+  margin-top: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 40px;
+  }
+  .container {
+    margin-top: 10%;
+  }
+  .btn {
+    width: 200px;
+    font-size: 50px;
+  }
+  .reset-btn {
+    font-size: 30px;
+  }
+  .counter-value {
+    height: 80px;
+    font-size: 50px;
+  }
+}
